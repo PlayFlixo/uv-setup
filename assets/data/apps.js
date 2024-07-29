@@ -1,7 +1,9 @@
 var apps = [
     {
       "id": "google",
+      "title": "",
       "url": "https://www.google.com/?safe=active&ssui=on",
+      'image': ''
       
     },
     {
