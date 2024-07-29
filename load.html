@@ -1,43 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
+    <title>Art Class</title>
 
-<head>
-  <link rel="shortcut icon" href="./assets/images/icon.png" type="image/png" />
-  <title>Art Class</title>
+    <link rel="stylesheet" href="./css/master.css" />
 
-  <link rel="stylesheet" href="./css/master.css" />
+    <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="./js/preload.js"></script>
+  </head>
 
-  <script src="/uv/uv.bundle.js" charset="UTF-8"></script>
-  <script src="/uv/uv.config.js"></script>
-  <script src="./js/preload.js"></script>
+  <body theme="main">
 
-  <script type="text/javascript">
-    atOptions = {
-      'key': '8d57283b953b8b546d6a04d4deac19dc',
-      'format': 'iframe',
-      'height': 250,
-      'width': 300,
-      'params': {}
-    };
-  </script>
-</head>
-
-<body theme="main">
-  <div class="gamecontainer">
-    <iframe allowfullscreen frameborder="0" id="frame"></iframe>
-    <div id="gameInfo">
-      <div class="gameHeader">
-        <img id="gameImage" alt="icon" />
-        <h3 id="gameTitle"></h3>
+    <div class="gamecontainer">
+      <iframe allowfullscreen frameborder="0" id="frame"></iframe>
+      <div id="gameInfo">
+        <div class="gameHeader">
+          <h3 id="gameTitle"></h3>
+        </div>
+        <p id="gameDescription"></p>
       </div>
-      <p id="gameDescription"></p>
     </div>
-  </div>
-</body>
+  </body>
 
-<script src="./js/index.js"></script>
-<script src="./assets/data/games.js"></script>
-<script src="./assets/data/apps.js"></script>
-<script src="./js/load.js"></script>
-
+  <script src="./js/index.js"></script>
+  <script src="./assets/data/games.js"></script>
+  <script src="./assets/data/apps.js"></script>
+  <script src="./js/load.js"></script>
 </html>
