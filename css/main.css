@@ -121,6 +121,7 @@ button:hover {
     justify-content: center;
     margin: 0;
     padding: 0;
+    z-index: 1000;
 }
 
 #gameInfo {
