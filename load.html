@@ -11,7 +11,36 @@
   <script src="/uv/uv.config.js"></script>
   <script src="./js/preload.js"></script>
 
-  <script type="text/javascript">
+  <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden; /* Prevents scrolling */
+    }
+
+    iframe {
+        width: 100vw;
+        height: 100vh;
+        border: none;
+    }
+  </style>
+</head>
+
+<body theme="main">
+  <iframe allowfullscreen frameborder="0" id="frame"></iframe>
+
+  <script src="./assets/data/games.js"></script>
+  <script src="./assets/data/apps.js"></script>
+  <script src="./js/load.js"></script>
+    <script type="text/javascript">
     atOptions = {
       'key': '8d57283b953b8b546d6a04d4deac19dc',
       'format': 'iframe',
@@ -20,18 +49,6 @@
       'params': {}
     };
   </script>
-</head>
-
-<body theme="main">
-
-  <div class="gamecontainer">
-    <iframe allowfullscreen frameborder="0" id="frame"></iframe>
-  </div>
 </body>
-
-<script src="./js/index.js"></script>
-<script src="./assets/data/games.js"></script>
-<script src="./assets/data/apps.js"></script>
-<script src="./js/load.js"></script>
 
 </html>
